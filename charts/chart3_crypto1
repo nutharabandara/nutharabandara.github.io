@@ -89,7 +89,7 @@
       "grid": false,
       "domainColor":"dimgrey",
       "labelColor":"#d8aba5",
-      "tickColor":"hotpink",
+      "tickColor":"pink",
       "gridColor":"dimgrey",
       "format":"$,.5"}
       }
