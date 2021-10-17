@@ -15,7 +15,8 @@ h1, h3, p{
 
 .chart{
     background-color: white;
-    min-width: 500px;
+    width: 330px;
+    padding: 10px;
     border-width: 10px;
     border-style: solid;
     border-radius: 5px;
