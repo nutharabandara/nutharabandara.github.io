@@ -44,6 +44,35 @@ h1, h3, p{
     font-family: 'Roboto', sans-serif;
 }
 
+.ss-style-zigzag::before,
+.ss-style-zigzag::after {
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    height: 90px;
+    background-size: 50px 100%;
+  }
+
+.ss-style-zigzag::before {
+	top: -90px;
+	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, darken($color1, 7%)));
+	background-image:
+		linear-gradient(315deg, darken($color1, 2%) 25%, transparent 25%),
+		linear-gradient( 45deg, darken($color1, 7%) 25%, transparent 25%);
+	background-position: 50%;
+}
+
+.ss-style-zigzag::after {
+	top: 100%;
+	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, darken($color1, 7%)), color-stop(0.25, $color1));
+	background-image: 
+		linear-gradient(135deg, darken($color1, 7%) 25%, transparent 25%),
+		linear-gradient(225deg, darken($color1, 7%) 25%, transparent 25%);
+	background-position: 50%;
+}
+
+
 .chart{
     background-color: white;
     width: 330px;
