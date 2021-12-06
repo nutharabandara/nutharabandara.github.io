@@ -1,0 +1,61 @@
+{
+    
+  "title": {
+    "text": "Resurgence of Covid",
+    "subtitle":"By Publish Date ",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#c55c15"
+  },
+
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/Covid_Resurgence%20.csv",
+    "format": {"type": "csv"}
+  },
+
+   "transform":[
+      
+      {"filter": {
+        "field": "areaName", 
+        "oneOf": ["Kensington and Chelsea", "Swindon", "Westminster"]}
+        }
+
+
+    ],
+  
+  
+  "height": 340,
+  "width": 310,
+   
+  "mark": {"type": "line", "point": false},
+ 
+  "encoding": {
+
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "y": {
+      "field": "newCasesByPublishDateRollingSum",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": true}
+    },
+
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {"scheme": "accent"},
+      "title": "Areas",
+      "legend": {
+        "orient": "top-left", 
+        "fillColor": "#FcFdFd"}
+    }
+}
+}
