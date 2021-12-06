@@ -1,0 +1,62 @@
+{
+    
+  "title": {
+    "text": " Cumulative PCR Tests (Bristol)",
+    "subtitle":"By Publish Date ",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#c55c15"
+  },
+
+
+  
+   "data": {
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=utla&metric=cumPCRTestsBySpecimenDate&format=csv",
+    "format": {"type": "csv"}
+  },
+
+   "transform":[
+      
+      {"filter": {
+        "field": "areaName", 
+        "oneOf": ["Bristol, City of"]}
+        }
+
+
+    ],
+  
+  
+  "height": 340,
+  "width": 310,
+   
+  "mark": {"type": "line", "point": false},
+ 
+  "encoding": {
+
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "y": {
+      "field": "cumPCRTestsBySpecimenDate",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": true}
+    },
+
+     "color": {
+      
+      "type": "nominal",
+      "scale": {"scheme": "pastel1"},
+      "title": "Areas",
+      "legend": {
+        "orient": "top-left", 
+        "fillColor": "#FcFdFd"}
+    }
+}
+}
