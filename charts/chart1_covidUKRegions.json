@@ -1,4 +1,4 @@
-  {"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+ {"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   
   "description": "Coronavirus cases",
   
@@ -19,7 +19,7 @@
 
   "height": 300,
   
-  "width": 280,
+  "width": 700,
   
   "mark": {"type": "bar", "width":10},
   
@@ -72,7 +72,7 @@
       "field": "areaName",
       "type": "nominal",
       "legend": null,
-      "scale": {"scheme": "inferno"}
+      "scale": {"scheme": "set2"}
     }
   }
 }
