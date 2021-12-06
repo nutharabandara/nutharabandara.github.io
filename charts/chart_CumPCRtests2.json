@@ -1,0 +1,56 @@
+{
+    
+    "title": {
+      "text": "Cumulative PCR Tests - York (Manually Written)",
+        "subtitle":"By Publish Date ",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#c55c15"
+  },
+    
+     "data": {
+      "values": [
+          {"a": "04/01/2020", "b": 700}, {"a": "08/01/2020", "b": 20000}, {"a": "11/01/2020", "b": 90000},
+ {"a": "11/01/2020", "b": 90000.9},
+          {"a": "01/02/2021", "b": 200000.7}, {"a": "04/01/2021", "b": 320000}, {"a": "07/01/2021", "b": 450004}, 
+          {"a": "10/10/2021", "b": 750000}
+      ]
+    },
+  
+   
+    
+    "height": 340,
+    "width": 310,
+     
+    "mark": {"type": "line", "point": false, "color": "hotpink"},
+   
+    "encoding": {
+  
+      "x": {
+        "field": "a",
+        "type": "temporal",
+        "title": "Cases from May 2020",
+        "axis": {"grid": false}
+      },
+  
+      "y": {
+        "field": "b",
+        "type": "quantitative",
+        "title": "Cases",
+        "axis": {"grid": false}
+      },
+  
+      "color": {
+        "field": "",
+        "type": "nominal",
+        "scale": {"scheme": "pastel1"},
+        "title": "Area",
+        "legend": {
+          "orient": "top-left", 
+          "fillColor": "transparent"}
+      }
+
+  }
+}
