@@ -1,85 +1,113 @@
-
-
-
-
+/* ECON30006: Data Visualisation Portfolio CSS style file */
 /* This is my first proper css file */
 
-.wrapper {
-  height: 100vh;
-  /*This part is important for centering*/
+/*-----------------------------------Fonts-------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    background-color: #ccdbfd;
+    max-width: 90%;
+    margin: auto;
+}
+
+.bodyText {
+  color: black;
+  margin-bottom: -22px;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.pagecontainer {
+    display: grid;
+}
+
+/*-----------------------------------Headings-------------------------------------*/
+
+h1 {
+    color: rgb(0, 51, 153); 
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+h2 {
+    color: rgb(0, 102, 102); 
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*-----------------------------------Charts-------------------------------------*/
+.chart {
+	background-color: white;
+	width: auto;
+  	position:static;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 5px;
+	border-width: 3px;
+  	border-style: solid;
+  	border-radius: 15px;
+  	border-color: rgb(0, 102, 102);
+	flex-flow: row wrap;
+}
+
+
+.chart:hover {
+  	transform: scale(1.035, 1.035);
+ 	transition: 0.8s;
+  
+}
+
+
+/*-----------------------------------Buttons-------------------------------------*/
+.buttons {
+  display:flex;
+  justify-content:center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.button {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $green;
+  border-radius: 0.6em;
+  color: $green;
+  cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 
-.typing-demo {
-  width: 45ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+	  
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+  box-shadow: 0 0 40px 40px $red inset;
   }
 }
 
 
-body{
-    background-color: rgb(233, 233, 233);
-}
-
-h1, h3, p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
-}
-
-.ss-style-zigzag::before,
-.ss-style-zigzag::after {
-    right: 0;
-    left: 0;
-    z-index: 10;
-    display: block;
-    height: 90px;
-    background-size: 50px 100%;
-  }
-
-.ss-style-zigzag::before {
-	top: -90px;
-	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, darken($color1, 7%)));
-	background-image:
-		linear-gradient(315deg, darken($color1, 2%) 25%, transparent 25%),
-		linear-gradient( 45deg, darken($color1, 7%) 25%, transparent 25%);
-	background-position: 50%;
-}
-
-.ss-style-zigzag::after {
-	top: 100%;
-	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, darken($color1, 7%)), color-stop(0.25, $color1));
-	background-image: 
-		linear-gradient(135deg, darken($color1, 7%) 25%, transparent 25%),
-		linear-gradient(225deg, darken($color1, 7%) 25%, transparent 25%);
-	background-position: 50%;
-}
 
 
-.chart{
-    background-color: white;
-    width: 330px;
-    padding: 10px;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: white;
-}
+
+
 
