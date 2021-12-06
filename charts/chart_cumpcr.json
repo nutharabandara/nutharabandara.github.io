@@ -1,7 +1,7 @@
 {
     
   "title": {
-    "text": " Cumulative PCR Tests (Bristol)",
+    "text": "Cumulative PCR Tests - York(w/ added false observations)",
     "subtitle":"By Publish Date ",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -13,7 +13,7 @@
 
   
    "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=utla&metric=cumPCRTestsBySpecimenDate&format=csv",
+    "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/charts/Cumulative_PCR_tests.csv",
     "format": {"type": "csv"}
   },
 
@@ -21,7 +21,7 @@
       
       {"filter": {
         "field": "areaName", 
-        "oneOf": ["Bristol, City of"]}
+        "oneOf": ["York"]}
         }
 
 
@@ -49,7 +49,7 @@
       "axis": {"grid": true}
     },
 
-     "color": {
+    "color": {
       
       "type": "nominal",
       "scale": {"scheme": "pastel1"},
