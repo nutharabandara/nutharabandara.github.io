@@ -45,6 +45,13 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: rgb(0, 102, 102); 
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 /*-----------------------------------Charts-------------------------------------*/
 .chart {
 	background-color: white;
