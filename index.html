@@ -51,9 +51,8 @@ body {
       
         <p class="bodyText"><span style="color: rgb(19, 143, 242); font-weight: 700;">Week 1: </span>Getting started</p>
 
-     
-<section class="col-3 color ss-style-zigzag">
-    <div class="column">
+<container class="ncontainer">
+    
   <!--Chart 1 -->
   
     <h3>Covid-19 Cases</h3>
@@ -72,12 +71,15 @@ body {
         </script>
     </div>
 
-
+</container>
+    
   <!--Chart 2 -->
   
     <h3>UK Productivity</h3>
       <p>My second chart displays the pattern of UK labour productivity over the past few years.</p>
 
+  <container class="ncontainer">
+        
   <div class="chart" id="chart2">
        <script>
         var myChart2 =  "charts/chart2_ukProductivity.json";
@@ -96,8 +98,8 @@ body {
       vegaEmbed('#chart3', myChart3);
     </script>
    </div>
- </div>
-</section>   
+
+    </container>
 <!-- ///////////////////  WEEK 2//////////////////////////////////// -->
 
      
@@ -105,7 +107,8 @@ body {
   
   <p class="bodyText"><span style="color: rgb(19, 143, 242); font-weight: 700;">Week 2: </span> Embedding Charts from a Given API & Raw Data</p>
     
-   
+  <container class="ncontainer">
+      
     <p>This chart was hosted from a given API.</p>
     
 <div class="chart" id="chart4">
@@ -127,7 +130,7 @@ body {
     </script>
   </div>     
       
-      
+ </container>     
  
   
     <!-- ///////////////////  WEEK 3//////////////////////////////////// -->
@@ -135,7 +138,7 @@ body {
 
   <p class="bodyText"><span style="color: rgb(19, 143, 242); font-weight: 700;">Week 3: </span> Embedding charts of my own design </p>
 
-      
+  <container class="ncontainer">      
        <!--Chart 6 -->
     
 <div class="chart" id="chart6">
@@ -154,7 +157,8 @@ body {
       vegaEmbed('#chart7', myChart7);
     </script>
   </div>  
-      
+
+      </container>
 
    <!-- ///////////////////  WEEK 4//////////////////////////////////// -->
   
