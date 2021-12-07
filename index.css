@@ -49,18 +49,18 @@ body {
 
 
 /*-----------------------------------Headings-------------------------------------*/
-
+(255, 255, 255)
 h1 {
-    color: rgb(0, 51, 153);
+    color: rgb(255, 255, 255);
     font-family: 'Raleway', sans-serif;
-    font-size: 40px;
+    font-size: 70px;
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
 }
 
 h2 {
-    color: rgb(0, 102, 102);
+    color: rgb(255, 255, 255);
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     margin-top: 20px;
