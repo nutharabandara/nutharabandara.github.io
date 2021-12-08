@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "",
+
+   "title": {
+    "text": "Climate Change Performance Index",
+    "subtitle":"Source: Wikipedia",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#c55c15"},
+
+  "config": {
+    "background":"#ffffff",
+    "view": {
+      "stroke": "transparent"}},
+ 
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/CCPI_data.csv",
+    "format": {"type":"csv"}
+    },
+  
+
+  "height": 300,
+  "width": 1050,
+  
+
+ "mark":{
+     "type": "bar",
+     "width":15
+     },
+
+  "encoding": {
+    "x": {
+      "field": "country",
+      "type": "nominal",
+      "axis": {"grid": false},
+        "title": "Country"
+      
+      },
+
+    "y": {
+      "field": "score",
+       "type": "quantitative",
+        "title": "Score",
+        "sort": {"encoding": "y", "order": "descending"},
+        "axis": {"grid": false}
+    },
+        "color": {
+      "field": "country",
+      "type": "nominal",
+      "legend":"",
+      "scale": {
+        "range": "category"
+      }
+    }
+  
+  }
+  }
