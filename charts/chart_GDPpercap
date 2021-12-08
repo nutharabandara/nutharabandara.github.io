@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "US Real GDP per capita",
+    "subtitle":"Source: AlphaVantage",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#c55c15"
+  },
+  
+   "data": {
+    "url": "https://www.alphavantage.co/query?function=REAL_GDP_PER_CAPITA&apikey=DCHOD06HIKH3O27T&datatype=csv",
+    "format": {"type": "csv"}
+  },
+  
+  "height": 300,
+  "width": 320,
+   
+  "mark": {"type": "line", 
+  "point": false,
+  "clip": true,
+  "color": "teal"
+  },
+ 
+  "encoding": {
+
+    "x": {
+      "field": "timestamp",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+     },
+    
+
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    }
+}
+}
