@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "",
+
+   "title": {
+    "text": "US Aviation CO2 Emissions",
+    "subtitle":"Source: FRED",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#c55c15"},
+
+  "config": {
+    "background":"#ffffff",
+    "view": {
+      "stroke": "transparent"}},
+ 
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/tracking-EMISSCO2VAVACBA.json",
+    "format": {"property": "observations"}
+    },
+  
+
+  "height": 300,
+  "width": 280,
+  
+
+"mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "linear",
+    "color": "slategrey"
+  },
+
+
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {"grid": false},
+        "title": "Date"
+      
+      },
+
+    "y": {
+      "field": "value",
+       "type": "quantitative",
+        "title": "value",
+        "axis": {"grid": false}
+      }
+  
+  }
+  }
