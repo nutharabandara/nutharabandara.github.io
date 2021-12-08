@@ -1,0 +1,250 @@
+{
+    "realtime_start": "2021-12-08",
+    "realtime_end": "2021-12-08",
+    "observation_start": "1600-01-01",
+    "observation_end": "9999-12-31",
+    "units": "lin",
+    "output_type": 1,
+    "file_type": "json",
+    "order_by": "observation_date",
+    "sort_order": "asc",
+    "count": 39,
+    "offset": 0,
+    "limit": 100000,
+    "observations": [
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1980-01-01",
+            "value": "1397.761213"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1981-01-01",
+            "value": "1382.724405"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1982-01-01",
+            "value": "1350.491796"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1983-01-01",
+            "value": "1354.327845"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1984-01-01",
+            "value": "1384.08227"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1985-01-01",
+            "value": "1414.879134"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1986-01-01",
+            "value": "1465.076518"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1987-01-01",
+            "value": "1511.339276"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1988-01-01",
+            "value": "1571.11"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1989-01-01",
+            "value": "1583.148277"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1990-01-01",
+            "value": "1580.288742"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1991-01-01",
+            "value": "1559.884387"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1992-01-01",
+            "value": "1582.947546"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1993-01-01",
+            "value": "1601.351223"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1994-01-01",
+            "value": "1641.067079"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1995-01-01",
+            "value": "1675.739696"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1996-01-01",
+            "value": "1720.925304"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1997-01-01",
+            "value": "1739.654741"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1998-01-01",
+            "value": "1776.391946"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "1999-01-01",
+            "value": "1822.462961"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2000-01-01",
+            "value": "1866.429829"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2001-01-01",
+            "value": "1845.466916"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2002-01-01",
+            "value": "1886.475856"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2003-01-01",
+            "value": "1886.659633"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2004-01-01",
+            "value": "1953.199872"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2005-01-01",
+            "value": "1979.877993"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2006-01-01",
+            "value": "2008.49124"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2007-01-01",
+            "value": "2013.712361"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2008-01-01",
+            "value": "1890.023736"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2009-01-01",
+            "value": "1824.873424"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2010-01-01",
+            "value": "1841.619697"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2011-01-01",
+            "value": "1812.978562"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2012-01-01",
+            "value": "1778.065356"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2013-01-01",
+            "value": "1808.069102"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2014-01-01",
+            "value": "1826.431096"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2015-01-01",
+            "value": "1851.85998"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2016-01-01",
+            "value": "1889.683091"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2017-01-01",
+            "value": "1905.127435"
+        },
+        {
+            "realtime_start": "2021-12-08",
+            "realtime_end": "2021-12-08",
+            "date": "2018-01-01",
+            "value": "1934.557925"
+        }
+    ]
+}
