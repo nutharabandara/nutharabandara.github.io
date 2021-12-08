@@ -4,7 +4,7 @@
   "description": "",
 
    "title": {
-    "text": "Industrial CO2 Emissions",
+    "text": "US Industrial CO2 Emissions",
     "subtitle":"Source: FRED",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
