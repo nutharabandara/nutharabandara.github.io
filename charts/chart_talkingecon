@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "",
+
+   "title": {
+    "text": "Furloughed Employments in 2021",
+    "subtitle":"Source: ONS",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#c55c15"},
+    
+    "data": {"url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/talkingecon.csv"},
+  "width": 400,
+  "height": 300,
+  "encoding": {"x": {"field": "Date", "type": "temporal"}},
+  "layer": [
+    {
+      "encoding": {
+        "color": {"field": "Gender", "type": "nominal"},
+        "y": {"field": "Furloughed Employments", "type": "quantitative"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {"transform": [{"filter": {"param": "hover", "empty": false}}],
+        "mark": "point"}
+      ]
+    },
+    {
+      "transform": [{"pivot": "symbol", "value": "Furloughed Employments", "groupby": ["Date"]}],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 7, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Female", "type": "quantitative"},
+          
+          {"field": "Male", "type": "quantitative"}
+        ]
+      },
+      "params": [{
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "clear": "mouseout"
+        }
+      }]
+    }
+  ]
+}
