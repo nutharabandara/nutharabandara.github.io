@@ -45,7 +45,23 @@ body {
 	padding: 30px;
 
 }
+/*-----------------------------------Navigation Bar-------------------------------------*/
 
+/* Collapsing Navbar Styles */
+
+@media(min-width:1000px) {
+  .navbar-default {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    padding: 40px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+  .navbar-default.affix {
+    padding: 0;
+    /* Add additional styles here for the COLLAPSED state */
+  }
+}
 
 
 /*-----------------------------------Headings-------------------------------------*/
