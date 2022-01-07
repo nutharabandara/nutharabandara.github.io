@@ -1,0 +1,36 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "",
+  
+     "title": {
+      "text": "Consumption by Food Group",
+      "subtitle":"Per capita dietary energy supply by food group",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black",
+      "subtitleColor": "black"
+     },
+
+      "view": {
+        "stroke": "transparent"},
+    "data": {"url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/Diet_composition.csv"
+      , "format": {"type":"csv"}},
+    "mark": "arc",
+    "encoding": {
+      "facet": {
+        "field": "Diet",
+        "title":null,
+        "type": "ordinal",
+        "columns": 3
+      },
+      "theta": {"field": "Value", "type": "quantitative"},
+      "color": {"field": "Food", "sort":"ascending", "type": "nominal", "scale":{"scheme":"category20"}, "title":"Race and Ethnicity"}
+    },
+    
+    "tooltip": [
+    {"field": "Diet", "type": "nominal", "title": "Diet"},
+    {"field": "Value", "type": "quantitative", "title": "Grams"}
+  ]
+
+  }
