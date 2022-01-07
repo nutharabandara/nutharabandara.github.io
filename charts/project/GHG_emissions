@@ -19,9 +19,9 @@
     "y": {"field": "Entity", "title": "Food Type", "sort": "-x"},
     "x": {
       "aggregate": "sum", "field": "GHG emissions per kilogram (Poore & Nemecek, 2018)",
-      "title": "Points", "axis": {"grid": false}
+      "title": "Kg of C02", "axis": {"grid": false}
     },
-    "color": {"field": "driver", "scale": {"scheme": "inferno"}, "legend": null},
+    "color": {"field": "GHG emissions per kilogram (Poore & Nemecek, 2018)", "type":"quantitative", "scale": {"scheme": "purples"}, "legend": null},
     "tooltip": [
     {"field": "Entity", "type": "nominal", "title": "Entity"},
     {"field": "GHG emissions per kilogram (Poore & Nemecek, 2018)", "type": "quantitative", "title": "GHG Emissions"}
