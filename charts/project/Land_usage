@@ -19,9 +19,9 @@
     "y": {"field": "Entity", "title": "Food Type", "sort": "-x"},
     "x": {
       "aggregate": "sum", "field": "Land use per kilogram (Poore & Nemecek, 2018)",
-      "title": "Points", "axis": {"grid": false}
+      "title": "meters squared (m²)", "axis": {"grid": false}
     },
-    "color": {"field": "driver", "scale": {"scheme": "greens"}, "legend": null},
+    "color": {"field": "Land use per kilogram (Poore & Nemecek, 2018)", "scale": {"scheme": "greens"}, "type": "quantitative", "legend": null},
     "tooltip": [
     {"field": "Entity", "type": "nominal", "title": "Entity"},
     {"field": "Land use per kilogram (Poore & Nemecek, 2018)", "type": "quantitative", "title": "Land Use"}
