@@ -1,0 +1,79 @@
+﻿Diet,Food,Value
+EAT-Lancet,cereals,232
+EAT-Lancet,roots_tubers,50
+EAT-Lancet,vegetables,300
+EAT-Lancet,fruits,200
+EAT-Lancet,milk_equivalents,250
+EAT-Lancet,red_meat,14
+EAT-Lancet,poultry,29
+EAT-Lancet,eggs,13
+EAT-Lancet,seafood,28
+EAT-Lancet,legumes,75
+EAT-Lancet,nuts,50
+EAT-Lancet,oils,52
+EAT-Lancet,sugar,31
+United Kingdom,cereals,324.0547945
+United Kingdom,roots_tubers,253.3150685
+United Kingdom,vegetables,227.1506849
+United Kingdom,fruits,245.4794521
+United Kingdom,milk_equivalents,612.739726
+United Kingdom,red_meat,128.1369863
+United Kingdom,poultry,87.50684932
+United Kingdom,eggs,30.76712329
+United Kingdom,seafood,54.05479452
+United Kingdom,legumes,10.08219178
+United Kingdom,nuts,4.465753425
+United Kingdom,oils,50.16438356
+United Kingdom,sugar,96.32876712
+United States,cereals,298.7671233
+United States,roots_tubers,154.0821918
+United States,vegetables,310.7123288
+United States,fruits,246.5753425
+United States,milk_equivalents,698.2739726
+United States,red_meat,185.2328767
+United States,poultry,152.5479452
+United States,eggs,42.65753425
+United States,seafood,61.26027397
+United States,legumes,10.2739726
+United States,nuts,9.616438356
+United States,oils,62.79452055
+United States,sugar,90.30136986
+China,cereals,535.8082192
+China,roots_tubers,182.4657534
+China,vegetables,1033.342466
+China,fruits,268.3013699
+China,milk_equivalents,65.89041096
+China,red_meat,127.2876712
+China,poultry,35.28767123
+China,eggs,62.24657534
+China,seafood,104.5753425
+China,legumes,3.753424658
+China,nuts,8.054794521
+China,oils,26.30136986
+China,sugar,19.80821918
+India,cereals,505.6438356
+India,roots_tubers,81.17808219
+India,vegetables,218.7945205
+India,fruits,158.0547945
+India,milk_equivalents,290.5753425
+India,red_meat,3.97260274
+India,poultry,6.082191781
+India,eggs,8.904109589
+India,seafood,18.90410959
+India,legumes,45.69863014
+India,nuts,4.438356164
+India,oils,21.8630137
+India,sugar,44.35616438
+Ethiopia,cereals,437.6986301
+Ethiopia,roots_tubers,223.8630137
+Ethiopia,vegetables,36.57534247
+Ethiopia,fruits,23.34246575
+Ethiopia,milk_equivalents,84.54794521
+Ethiopia,red_meat,11.45205479
+Ethiopia,poultry,0.356164384
+Ethiopia,eggs,1.178082192
+Ethiopia,seafood,1.205479452
+Ethiopia,legumes,59.8630137
+Ethiopia,nuts,1.589041096
+Ethiopia,oils,9.863013699
+Ethiopia,sugar,22.76712329
