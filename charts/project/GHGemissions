@@ -21,7 +21,7 @@
       "aggregate": "sum", "field": "GHG emissions per kilogram (Poore & Nemecek, 2018)",
       "title": "Points", "axis": {"grid": false}
     },
-    "color": {"field": "driver", "scale": {"scheme": "blues"}, "legend": null},
+    "color": {"field": "driver", "scale": {"scheme": "inferno"}, "legend": null},
     "tooltip": [
     {"field": "Entity", "type": "nominal", "title": "Entity"},
     {"field": "GHG emissions per kilogram (Poore & Nemecek, 2018)", "type": "quantitative", "title": "GHG Emissions"}
