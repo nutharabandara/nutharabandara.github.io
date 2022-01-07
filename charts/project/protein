@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "",
+
+   "title": {
+    "text": "Where does our Protein really come from?",
+    "subtitle":" Daily per capita grams of Protein Consumption",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#1e1291"},
+
+  "config": {
+    "background":"rgb(248, 244, 248)",
+    "view": {
+      "stroke": "transparent"}},
+
+  "data": {"url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/protein.csv"},
+ "mark":{
+     "type": "bar",
+     "height": 25
+     },
+    
+   "height": 400,
+   "encoding": 
+      {
+        "x": 
+        {
+          "field": "Value", 
+          "type": "quantitative",
+          "sort": {"field": "Value", "order": "ascending"},
+          "axis": null
+        },
+
+        "y": 
+        {
+          "field": "Country ", 
+          "type":"nominal", 
+          "sort": {"field": "Value", "order": "descending"},
+          "title": null,
+          "axis": {"grid": false}
+        },
+
+    "color": {"field": "Source", "title": "Source", "scale": {"scheme": "tableau10"}},
+     "tooltip": [
+    {"field": "Source", "type": "nominal", "title": "Source"},
+    {"field": "Value", "type": "quantitative", "title": "Grams per day"}
+  ]
+  }
+}
