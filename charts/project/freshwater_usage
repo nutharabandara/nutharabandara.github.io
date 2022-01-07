@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+      "text": "Freshwater withdrawals per kg by Food Group",
+      "subtitle":"Source: Our World in Data",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black",
+      "subtitleColor":"black"},
+  "height": 700,
+  "width": "container",
+  "data": {
+    "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/water-withdrawals-per-kg-poore.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type":"bar"},
+  "encoding": {
+    "y": {"field": "Entity", "title": "Food Type", "sort": "-x"},
+    "x": {
+      "aggregate": "sum", "field": "Freshwater withdrawals per kilogram (Poore & Nemecek, 2018)",
+      "title": "Liters", "axis": {"grid": false}
+    },
+    "color": {"field": "Freshwater withdrawals per kilogram (Poore & Nemecek, 2018)", "scale": {"scheme": "blues"}, "type": "quantitative", "legend": null},
+    "tooltip": [
+    {"field": "Entity", "type": "nominal", "title": "Entity"},
+    {"field": "Freshwater withdrawals per kilogram (Poore & Nemecek, 2018)", "type": "quantitative", "title": "Freshwater withdrawals"}
+  ]
+  }
+}
