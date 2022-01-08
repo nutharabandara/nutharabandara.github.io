@@ -1,3 +1,5 @@
+
+   
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "",
@@ -9,7 +11,7 @@
     "subtitleFontSize":10,
     "anchor": "start",
     "color": "#000000",
-    "subtitleColor":"#c55c15"},
+    "subtitleColor": "black"},
 
     "data": {
     "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/talkingecon.csv"
