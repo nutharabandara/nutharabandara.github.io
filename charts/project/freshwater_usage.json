@@ -8,8 +8,8 @@
       "anchor": "start",
       "color": "black",
       "subtitleColor":"black"},
-  "height": 700,
-  "width": "container",
+  "height": 600,
+  "width": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/water-withdrawals-per-kg-poore.csv",
     "format": {"type": "csv"}
