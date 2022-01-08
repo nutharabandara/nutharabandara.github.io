@@ -31,7 +31,7 @@
     },
 
     "y": {
-      "aggregate": "sum", "field": "Value", "title": "Calories per capita"
+      "aggregate": "sum", "field": "Value", "title": "Grams per capita"
     },
 
      "facet": {
