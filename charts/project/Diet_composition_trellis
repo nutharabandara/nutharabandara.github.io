@@ -1,0 +1,61 @@
+
+   
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "",
+  
+     "title": {
+      "text": "Consumption by Food Group ",
+      "subtitle":"Per capita dietary energy supply by food group compared to the EAT-Lancet Diet",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black",
+      "subtitleColor": "black"
+     },
+
+     "width": 300,
+  "height": 300,
+
+      "view": {
+        "stroke": "transparent"},
+    "data": {"url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/Diet_composition_overtime.csv"
+      , "format": {"type":"csv"}},
+    "mark": "area",
+    "encoding": {
+    "x": {
+      "timeUnit": "year", "field": "Year",
+      "axis": {"format": "%Y"},
+      "type": "ordinal", 
+      "title": "Year"
+    },
+
+    "y": {
+      "aggregate": "sum", "field": "Value", "title": "Calories per capita"
+    },
+
+     "facet": {
+        "field": "Diet", 
+  
+        "type": "ordinal",
+        "columns": 3,
+        "title": "***"
+      },
+
+    "color": {
+      "field": "Food",
+      "scale": {"scheme": "tableau20"}},
+
+    "tooltip": [
+    {"field": "Diet", "type": "nominal", "title": "Diet"},
+    {"field": "Food", "type": "ordinal", "title": "Food group"},
+    {"field": "Value", "type": "quantitative", "title": "Grams"}
+    
+  ]
+
+    }
+    
+  
+    
+
+  }
