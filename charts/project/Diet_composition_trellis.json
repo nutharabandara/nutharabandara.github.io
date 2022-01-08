@@ -44,14 +44,7 @@
 
     "color": {
       "field": "Food",
-      "scale": {"scheme": "tableau20"}},
-
-    "tooltip": [
-    {"field": "Diet", "type": "nominal", "title": "Diet"},
-    {"field": "Food", "type": "ordinal", "title": "Food group"},
-    {"field": "Value", "type": "quantitative", "title": "Grams"}
-    
-  ]
+      "scale": {"scheme": "tableau20"}}
 
     }
     
