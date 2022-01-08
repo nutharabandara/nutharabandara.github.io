@@ -4,7 +4,7 @@
   
     "title": {
         "text": "Share of energy from cereals, roots, and tubers vs. GDP per capita",
-        "subtitle":"Scroll to explore the data",
+        "subtitle":"Source: Food and Agricultural Organisation, United Nations",
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
@@ -16,16 +16,13 @@
     "data": {
       "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/shareofenergyfromcereals_gdp.csv"
     },
-    "params": [{
-      "name": "view",
-      "select": "interval",
-      "bind": "scales"
-    }],
-  
+    
+  "layer": [
+    {
     "mark": "circle",
     "config":{"point": {"size": 30} },
     
-    "encoding": {
+     "encoding": {
       "y": {
         "field": "Share",
         "type": "quantitative",
@@ -52,4 +49,41 @@
           },
           "tooltip": [{"field": "Country"},{"field": "GDP per capita", "title": "GDP per capita ($)" }, {"field": "Share", "title": "%energy from cereals, roots, and tubers"}]
         }
-   }
+    },
+    {
+      "mark":{
+      "type": "line","strokeWidth":4,"color":"#3a3d3d","interpolate":"cardinal","opacity":1
+    },
+      "transform": [{"regression": "GDP per capita", "on": "Share"}],
+      "encoding": {
+        "x": {"field": "GDP per capita",
+        "type": "quantitative"
+        },
+        "y": {"field": "Share",
+        "type": "quantitative"
+        },
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "legend": null,
+          "scale": {"scheme": "blues", "reverse": true}
+        },
+        "tooltip": {"field": "State", "type": "ordinal"}
+      }
+    },
+    {
+      "transform": [
+        {"regression": "Share", "on": "GDP per capita", "params": true},
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "plum",
+        "x": "width",
+        "align": "right",
+        "y": -10
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}
