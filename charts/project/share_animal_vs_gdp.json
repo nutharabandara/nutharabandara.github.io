@@ -1,0 +1,56 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "",
+  
+    "title": {
+        "text": "Share of energy from animal proteins vs. GDP per capita",
+        "subtitle":"Scroll to explore the data",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black",
+        "subtitleColor": "black"
+       },
+  
+    "width": 500,"height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/share_animal_GDP.csv"
+    },
+    "params": [{
+      "name": "view",
+      "select": "interval",
+      "bind": "scales"
+    }],
+  
+    "mark": "circle",
+    "config":{"point": {"size": 30} },
+    
+    "encoding": {
+      "y": {
+        "field": "Share",
+        "type": "quantitative",
+        "title": "% of Energy",
+        "scale": {"domain": [0,15]},
+        "axis": {"minExtent": 30}
+      },
+      "x": {
+        "field": "GDP per capita",
+        "type": "quantitative",
+         "scale": {"domain": [500,52000]}
+        
+      },
+      "size": {
+        "field": "Population", 
+        "type": "quantitative", 
+        "legend":null,
+         "scale": {"rangeMax":2000, "rangeMin": 100}
+         },
+      "color": {
+            "field": "Share",
+            "type": "quantitative",
+            "legend": null,
+            "scale": {"scheme": "category10", "reverse": true}
+          },
+          "tooltip": [{"field": "Entity", "title": "Country"},{"field": "GDP per capita", "title": "GDP per capita ($)" }, {"field": "Share", "title": "%energy from animal proteins"}]
+        }
+   }
