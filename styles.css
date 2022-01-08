@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
-    background-color: rgb(62, 86, 34);
+    background-color: rgb(233, 241, 247);
     max-width: auto;
     margin: auto;
     text-align: center;
@@ -49,25 +49,12 @@ body {
 
 /* Collapsing Navbar Styles */
 
-@media(min-width:1000px) {
-  .navbar-default {
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-    padding: 40px 0;
-    /* Add additional styles here for the UNCOLLAPSED state */
-  }
-  .navbar-default.affix {
-    padding: 0;
-    /* Add additional styles here for the COLLAPSED state */
-  }
-}
 
 
 /*-----------------------------------Headings-------------------------------------*/
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: black;
     font-family: 'Raleway', sans-serif;
     font-size: 70px;
     margin-top: 20px;
@@ -76,7 +63,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+    color: black;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     margin-top: 5px;
