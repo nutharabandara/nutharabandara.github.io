@@ -35,8 +35,7 @@
       },
       "x": {
         "field": "GDP per capita",
-        "type": "quantitative",
-         "scale": {"domain": [500,60000]}
+        "type": "quantitative"
         
       },
       "size": {
