@@ -13,7 +13,7 @@
     "subtitleColor":"#1e1291"},
 
   "config": {
-    "background":"rgb(248, 244, 248)",
+    "background":"rgb(255, 255, 255)",
     "view": {
       "stroke": "transparent"}},
 
