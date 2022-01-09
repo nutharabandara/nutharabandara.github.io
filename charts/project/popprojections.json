@@ -1,0 +1,136 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "",
+
+   "title": {
+    "text": "World Population Projections",
+    "subtitle":"Source: Statista",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "black"},
+
+  "config": {
+    "background":"#ffffff",
+    "view": {
+      "stroke": "transparent"}},
+ 
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/population.csv",
+    "format": {"property": "observations"}
+    },
+  
+
+  "height": 300,
+  "width": 280,
+  
+
+"mark": {
+    "type": "line",
+    "point": true,
+    "interpolate": "linear",
+    "color": "slateblue"
+  },
+
+ "transform": [
+       {"calculate": "year(datum.Year)", "as": "year"},
+      {"filter": "datum.year>=minYear"},
+      {"filter": "datum.year<=maxYear"}
+  ],
+  
+    "params": [    
+      {"name":"minYear", "value":1950,
+         "bind":{
+           "input": "range",
+           "min": 1950, 
+           "max": 2050, 
+           "step": 1,
+           "name": "Start year:"}
+      },
+  
+      {"name":"maxYear", "value":2050,
+         "bind":{
+           "input": "range",
+           "min": 1950, 
+           "max": 2050, 
+           "step": 1,
+           "name": "End year:"}
+      }
+    ],
+
+
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {"grid": true},
+        "title": "Year"
+      
+      }},
+
+  "layer":[
+
+      {"mark": {
+          "type": "line",
+          "point": true,
+          "strokeWidth":1,
+          "width": 1,
+          "opacity": 1,
+          "tooltip": true
+        },
+
+
+ "encoding": {
+    "y": {
+      "field": "Population (billions)",
+       "type": "quantitative",
+        "title": "Population (billions)",
+        "axis": {"grid": true}
+      },   
+       "color": {
+            "datum": "Price",
+            "scale": {"scheme": "greens"},
+            "legend": null
+
+            }}
+      },
+
+     {"mark": {
+          "type": "line",
+          "point": false,
+          "strokeWidth":1,
+    "interpolate": "linear",
+    "color":"#FFD700",
+    "opacity": 0.5,
+    "size": 1,
+    "tooltip": true
+        },
+
+      "encoding": {
+          "y": {
+          "field": "Volume",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": false,
+            "labelColor":"red",
+            "tickColor": "pink"}
+          
+            },
+            
+          "color": {
+            "datum": "Volume",
+            "scale": {"range": ["orange", "hotpink"]},
+            "legend":{
+              "orient": "top-left"}}
+        
+        } 
+    }
+],
+
+    "resolve": {"scale": {"y": "independent"}} 
+
+}
