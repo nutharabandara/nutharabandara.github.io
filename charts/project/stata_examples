@@ -1,0 +1,15 @@
+clear all
+
+cd "/Users/nutharabandara/Desktop"
+
+insheet using water.csv
+
+merge 1:1 entity using food.dta
+ 
+drop _merge
+
+merge 1:1 entity using landuse.dta
+
+keep if year == 2017 
+
+export excel using "emissions"
