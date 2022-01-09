@@ -47,7 +47,7 @@
       "scale": {"scheme": "tableau20"}},
        
     "tooltip": [
-    {"field": "Diet", "type": "nominal", "title": "Diet"},
+    {"field": "Diet", "type": "nominal", "title": "Country"},
     {"field": "Food", "type": "ordinal", "title": "Food group"},
     {"field": "Value", "type": "quantitative", "title": "Grams"}
     
