@@ -108,8 +108,8 @@ h3 {
 
     
     .button, .buttonActive {
-      border: 2px solid rgb(187, 39, 180);
-      color: rgb(116, 18, 99);
+      border: 2px solid rgb(103, 114, 122);
+      color: rgb(250, 251, 252);
       font-family: 'Raleway', sans-serif;
       line-height: 16px;
       font-weight: 600;
@@ -132,7 +132,7 @@ h3 {
     .buttonActive {
       color: #2d1247;
       color: rgb(253, 249, 252) !important;
-      background-color: rgb(141, 22, 131) !important;
+      background-color: rgb(160, 166, 173) !important;
     }
     
     @-webkit-keyframes edit {
