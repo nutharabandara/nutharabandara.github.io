@@ -47,7 +47,7 @@
             "legend": null,
             "scale": {"scheme": "category10", "reverse": true}
           },
-          "tooltip": [{"field": "Country"},{"field": "GDP per capita", "title": "GDP per capita ($)" }, {"field": "Share", "title": "%energy from cereals, roots, and tubers"},{"field": "Population", "title": "Population"}]
+          "tooltip": [{"field": "Country"},{"field": "GDP per capita", "title": "GDP per capita ($)" }, {"field": "Share", "title": "%energy from cereals, roots, and tubers"},{"field": "Pop", "title": "Population"}]
         }
     },
     {
