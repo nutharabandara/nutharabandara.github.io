@@ -1,4 +1,4 @@
- {"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+{"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   
   "description": "food pollution",
   
@@ -19,7 +19,6 @@
 
 
   "height": 700,
-  
   "width": 500,
   
   "mark": {"type": "bar"},
@@ -31,7 +30,7 @@
       "bind": {
         "input": "select",
         "options": [
-          
+          null,
           "GHG emissions (kg of c02) per kg",
         "Land use (m^2) per kg", 
         "Freshwater withdrawals (l) per kg"
@@ -57,10 +56,10 @@
     
       
     "color": {
-      "field": "entity",
+      "field": "choice",
       "type": "nominal",
-      "legend": null,
-      "scale": {"scheme": "set2"}
+      "legend": { "title":"Measure"},
+      "scale": {"scheme": "blues"}
     },
 
     "tooltip": 
