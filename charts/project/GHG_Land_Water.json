@@ -1,0 +1,78 @@
+ {"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+  "description": "food pollution",
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/nutharabandara/nutharabandara.github.io/main/data/pollutionfood.csv",
+    "format": {"type": "csv"}
+  },
+
+  "title": {
+      "text": "The Foods We Eat and their Effects on the Environment",
+      "subtitle":"Select from the options below to explore the data",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black",
+      "subtitleColor":"black"},
+
+
+
+  "height": 700,
+  
+  "width": 500,
+  
+  "mark": {"type": "bar", "width":10},
+  
+  "selection": {
+    "Measure": {
+      "type": "single",
+      "fields": ["choice"],
+      "bind": {
+        "input": "select",
+        "options": [
+          
+          "GHG emissions (kg of c02) per kg",
+        "Land use (m^2) per kg", 
+        "Freshwater withdrawals (l) per kg"
+        ],
+        "name": "Measure"
+      }
+    }
+  },
+  "transform": [
+    
+    {"filter": {"selection": "Measure"}}
+    
+  ],
+
+  "encoding": {
+    "x": {"field": "value", "type": "quantitative", "title": null},
+    "y": {
+      "field": "entity",
+      "type": "ordinal",
+      "sort": {"field": "value", "order": "descending"},
+      "title": null
+    },
+    
+      
+    "color": {
+      "field": "entity",
+      "type": "nominal",
+      "legend": null,
+      "scale": {"scheme": "set2"}
+    },
+
+    "tooltip": 
+        [
+          {
+            "field": "entity", "title": "Food Group"
+          },
+          {
+            "field": "value",
+            "title": "Emission/Usage",
+            "format": ".2f"
+          }
+        ]
+  }
+}
