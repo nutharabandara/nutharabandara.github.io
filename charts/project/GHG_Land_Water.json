@@ -22,7 +22,7 @@
   
   "width": 500,
   
-  "mark": {"type": "bar", "width":10},
+  "mark": {"type": "bar"},
   
   "selection": {
     "Measure": {
