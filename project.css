@@ -17,10 +17,11 @@ body {
   margin-bottom: 22px;
   margin-top: 50px;
   font-family: 'Railway', sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: lighter;
   text-align: center;
 }
+
 
 .pagecontainer {
     display: grid;
