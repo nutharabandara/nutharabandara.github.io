@@ -47,7 +47,7 @@
             "legend": null,
             "scale": {"scheme": "category10", "reverse": true}
           },
-          "tooltip": [{"field": "Entity", "title": "Country"},{"field": "GDP per capita", "title": "GDP per capita ($)" }, {"field": "Share", "title": "%energy from animal proteins"}]
+          "tooltip": [{"field": "Entity", "title": "Country"},{"field": "GDP per capita", "title": "GDP per capita ($)" }, {"field": "Share", "title": "%energy from animal proteins"},{"field": "Population", "title": "Population"}]
         }
     },
     {
