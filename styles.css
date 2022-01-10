@@ -163,33 +163,16 @@ h3 {
     
 //*------------------------------- Mobile friendly version--------------------------------------- *//
 
-@media only screen and (max-width: 450px) {
-  body {
-    max-width: 98%
-  }
-  .multi-button button {
-    font-size: 1rem;
-  }
-  .chart {
-    min-width: 350px;
-    padding: 10px
-  }
-  .chart:hover {
-    border-color: rgb(224, 70, 8);
-  }
-  .bcontainer {
-    border-style: none;
-    padding: 1px;
-    gap: 10px 10px
-  }
-  .bcontainer-project {
-    border-style: none;
-    padding: 1px;
-    gap: 10px 10px
-  }
-  .bcontainer-project-section4 {
-    border-style: none;
-    padding: 1px;
-    gap: 10px 10px
-  }
+@media only screen
+and (max-device-width : 800px) { 
+
+.nav {display: none !important;}
+
+}
+
+@media only screen
+and (min-device-width : 800px) { 
+
+.sectional_nav {display: none !important;}
+
 }
