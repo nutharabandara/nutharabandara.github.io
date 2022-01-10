@@ -57,35 +57,39 @@ h1 {
 
 h2 {
     color: black;
-  font-size: 25px;
-  margin-top: -35px;
-  font-weight: lighter;
-  font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 0px;	
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 }
  }
 
 h3 {
-    color: black;
+  color: black;
   font-size: 35px;
-  margin-top: -35px;
-  font-weight: lighter;
+  margin-top: 30px;
+  margin-bottom: 0px;	
+  text-align: center;
+  font-weight: bold;
+  
   font-family: 'Raleway', sans-serif;
  }
 
 /*-----------------------------------Charts-------------------------------------*/
 .chart {
-  background-color: white;
-  border-style: solid;
-  border-color: white;
-  border-width: 3px;
-  border-radius: 25px;
-  text-align: center;
-  padding: 20px;
-  transition: border-radius 400ms, flex-grow 1000ms;
-  width: 45%;
-  min-width: 350px;
-  transition: transform 1000ms;
-  
+	border-style: solid;
+	border-width: 3px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	border: green solid 2px;
+	background-color: white;
+	flex-flow: row wrap;
+	clear:left;
+	
 }
 
 
