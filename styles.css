@@ -29,22 +29,15 @@ body {
 
 .ncontainer {
 	align-content: center;
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-	position: relative;
-  	left: 120px;
-  	width: 80%;
-	margin-top: 20%
-	margin-bottom: 20%
-  	text-align: center;
-  	border: 3px solid rgb(255, 255, 255);
-  	border-top: none;
-  	border-left: none;
-  	border-right: none;
-	padding: 30px;
-
-}
+	display: flow-root;
+      position: relative;
+      text-align: center;
+      border: 3px solid rgb(255, 255, 255);
+      border-top:none;
+      border-left: none;
+      border-right: none;
+    }
+  	
 /*-----------------------------------Navigation Bar-------------------------------------*/
 
 /* Collapsing Navbar Styles */
