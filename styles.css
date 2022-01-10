@@ -6,10 +6,10 @@
 
 body {
     background-color: rgb(233, 241, 247);
-    max-width: auto;
-    margin: auto;
+    margin: 0;
     text-align: center;
-    width: 100%;
+    padding: 0;
+    min-height: 100vh;
 }
    
 .bodyText {
@@ -65,20 +65,20 @@ h1 {
 h2 {
     color: black;
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    margin-top: 5px;
-    font-weight: bold;
-    text-align: center;
-}
+    margin-top: 100px !important;
+    font-size: 25px !important;
+    font-family: 'Raleway', sans-serif !important;
+    margin-left: -200px !important;
+ }
 
 h3 {
     color: rgb(0, 102, 102);
     font-family: 'Raleway', sans-serif;
-    font-size: 35px;
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center;
-}
+    margin-top: 100px !important;
+    font-size: 35px !important;
+    font-family: 'Raleway', sans-serif !important;
+    margin-left: -200px !important;
+ }
 
 /*-----------------------------------Charts-------------------------------------*/
 .chart {
