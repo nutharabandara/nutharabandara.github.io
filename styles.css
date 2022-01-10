@@ -28,15 +28,17 @@ body {
 }
 
 .ncontainer {
-	align-content: center;
-	display: flow-root;
-      position: relative;
-      text-align: center;
-      border: 3px solid rgb(255, 255, 255);
-      border-top:none;
-      border-left: none;
-      border-right: none;
-    }
+        display: flow-root;
+        position: relative;
+        left: 120px;
+        width: 80%;
+        text-align: center;
+        border: 3px solid rgb(0, 0, 0);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      
   	
 /*-----------------------------------Navigation Bar-------------------------------------*/
 
@@ -78,26 +80,31 @@ h3 {
  }
 
 /*-----------------------------------Charts-------------------------------------*/
-.chart {
-	border-style: solid;
-	border-width: 3px;
-	margin-left: 10px;
-	margin-top: 10px;
-	border-radius: 5px;
-	padding: 5px;
-	border: green solid 2px;
-	background-color: white;
-	flex-flow: row wrap;
-	clear:left;
-	
-}
 
+    
+      .chart{
+        width: auto;
+        position:static;
+        border-width: 1px;
+        background-color: rgb(250, 243, 250);
+        border-style: solid;
+        border-radius: 15px;
+        border-color: rgb(250, 243, 250);
+        margin: 1% 1% 3% 1%;;
+        text-align: center !important;
+        padding: 10px;
+       
+        
+        /*5px 50px 25px 200px*/
+      
+      }
+      
+      .chart:hover {
+        transform: scale(1.04, 1.04);
+        transition: 0.6s;
+        
+      }
 
-.chart:hover {
-  	transform: scale(1.035, 1.035);
- 	transition: 0.8s;
-  
-}
 
 /*-----------------------------------Buttons-------------------------------------*/
 
