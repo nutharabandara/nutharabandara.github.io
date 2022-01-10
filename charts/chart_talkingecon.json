@@ -1,9 +1,5 @@
-
-   
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "",
-
    "title": {
     "text": "Furloughed Employments in 2021",
     "subtitle":"Source: ONS",
@@ -19,80 +15,24 @@
     
   "width": 300,
   "height": 300,
-    
-  "layer": [
-    {
-      "encoding": {
-        "x": {"field": "Date", "type": "temporal", "title": "Date"},
+   
+  "mark": {
+    "type": "line"
+  },
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal", "title": "Date"},
         "y": {
           "field": "Furloughed Employments",
           "type": "quantitative",
           "title": "Furloughed Employments"
         },
-        "color": {
-          "field": "Gender",
-          "type": "nominal",
-          "scale": {"scheme": "set2"},
-          "title": "Gender"
-        }
-      },
-      "layer": [
-        {"mark": "line"},
-        {
-          "params": [
-            {
-              "name": "label",
-              "select": {
-                "type": "point",
-                "encodings": ["x"],
-                "nearest": true,
-                "on": "mouseover"
-              }
-            }
-          ],
-          "mark": "point",
-          "encoding": {
-            "opacity": {
-              "condition": {"param": "label", "empty": false, "value": 1},
-              "value": 0
-            }
-          }
-        }
-      ]
-    },
-    {
-      "transform": [{"filter": {"param": "label", "empty": false}}],
-      "layer": [
-        {
-          "mark": {"type": "rule", "color": "gray"},
-          "encoding": {
-            "x": {"type": "temporal", "field": "Year", "aggregate": "min"}
-          }
-        },
-        {
-          "encoding": {
-            "text": {"type": "quantitative", "field": "Furloughed Employments"},
-            "x": {"type": "temporal", "field": "Date"},
-            "y": {"type": "quantitative", "field": "Furloughed Employments"}
-          },
-          "layer": [
-            {
-              "mark": {
-                "type": "text",
-                "stroke": "white",
-                "strokeWidth": 2,
-                "align": "left",
-                "dx": 5,
-                "dy": -5
-              }
-            },
-            {
-              "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
-              "encoding": {"color": {"type": "nominal", "field": "Gender"}}
-            }
-          ]
-        }
-      ]
-    }
+    "color": {"field": "Gender", "type": "ordinal","scale": {"scheme": "set2"}},
+  
+
+  "tooltip": [
+    {"field": "Gender", "type": "ordinal", "title": "Gender"},
+    {"field": "Furloughed Employments", "type": "quantitative", "title": "Furloughed Employments"}
   ]
+  }
+
 }
