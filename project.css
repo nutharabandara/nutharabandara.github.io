@@ -110,24 +110,24 @@ h3 {
 	align-content: center;
 	flex-flow: center;
 	border-radius: 4px;
-	background-color: #FF6766;
-	border: 2px solid #ffffff;
-	color: #ffffff;
+	background-color: rgb(233, 241, 247);
+	border: 2px solid  rgb(10, 10, 10);
+	color:  rgb(10, 10, 10);
 	text-align: center;
-	font-size: 28px;
+	font-size: 26px;
 	padding: 20px;
 	width: 240px;
 	cursor: pointer;
 	margin: 5px;
 	transition: color 1s;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Raleway', sans-serif;
   }
 
   .button span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
-	transition: 0.5s;
+	transition: 0.4s;
 
   }
   
@@ -137,7 +137,7 @@ h3 {
 	opacity: 0;
 	top: 0;
 	right: -20px;
-	transition: 0.5s;
+	transition: 0.4s;
 
   }
 
