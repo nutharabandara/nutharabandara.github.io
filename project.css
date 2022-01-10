@@ -106,251 +106,51 @@ h3 {
 
 /*-----------------------------------Buttons-------------------------------------*/
 
-    
-    .button, .buttonActive {
-      border: 2px solid rgb(103, 114, 122);
-      color: rgb(250, 251, 252);
-      font-family: 'Raleway', sans-serif;
-      line-height: 16px;
-      font-weight: 600;
-      border-radius: 350px;
-      box-sizing: content-box;
-      align-items: flex-start;
-      display: inline-block;
-      font-size: 18px; 
-      margin: 1px 2px 1px 2px;
-      text-decoration: none;
-      max-width: 100px;
-      outline-offset: 2px;
-      overflow: hidden;
-      padding: 5px 12px;
-      text-align: center;
-      text-overflow: ellipsis;
-      transition: border-color,background-color .3s ease;
-     }
-    
-    .buttonActive {
-      color: #2d1247;
-      color: rgb(253, 249, 252) !important;
-      background-color: rgb(160, 166, 173) !important;
-    }
-    
-    @-webkit-keyframes edit {
-      0% {
-        -webkit-transform: rotate(-12deg);
-        transform: rotate(-12deg);
-      }
-    
-      8% {
-        -webkit-transform: rotate(12deg);
-        transform: rotate(12deg);
-      }
-    
-      10% {
-        -webkit-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      18% {
-        -webkit-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      20% {
-        -webkit-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      28% {
-        -webkit-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      30% {
-        -webkit-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      38% {
-        -webkit-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      40% {
-        -webkit-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      48% {
-        -webkit-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      50% {
-        -webkit-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      58% {
-        -webkit-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      60% {
-        -webkit-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      68% {
-        -webkit-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      75% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-    }
-    
-    @keyframes edit {
-      0% {
-        -webkit-transform: rotate(-12deg);
-        -ms-transform: rotate(-12deg);
-        transform: rotate(-12deg);
-      }
-    
-      8% {
-        -webkit-transform: rotate(12deg);
-        -ms-transform: rotate(12deg);
-        transform: rotate(12deg);
-      }
-    
-      10% {
-        -webkit-transform: rotate(24deg);
-        -ms-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      18% {
-        -webkit-transform: rotate(-24deg);
-        -ms-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      20% {
-        -webkit-transform: rotate(-24deg);
-        -ms-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      28% {
-        -webkit-transform: rotate(24deg);
-        -ms-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      30% {
-        -webkit-transform: rotate(24deg);
-        -ms-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      38% {
-        -webkit-transform: rotate(-24deg);
-        -ms-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      40% {
-        -webkit-transform: rotate(-24deg);
-        -ms-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      48% {
-        -webkit-transform: rotate(24deg);
-        -ms-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      50% {
-        -webkit-transform: rotate(24deg);
-        -ms-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      58% {
-        -webkit-transform: rotate(-24deg);
-        -ms-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      60% {
-        -webkit-transform: rotate(-24deg);
-        -ms-transform: rotate(-24deg);
-        transform: rotate(-24deg);
-      }
-    
-      68% {
-        -webkit-transform: rotate(24deg);
-        -ms-transform: rotate(24deg);
-        transform: rotate(24deg);
-      }
-    
-      75% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-    }
+    .button{
+	align-content: center;
+	flex-flow: center;
+	border-radius: 4px;
+	background-color: #FF6766;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 240px;
+	cursor: pointer;
+	margin: 5px;
+	transition: color 1s;
+	font-family: 'Open Sans Condensed', sans-serif;
+  }
 
-    .faa-home.animated,
-      .faa-home.animated-hover:hover,
-      .faa-parent.animated-hover:hover > .faa-home {
-        -webkit-animation: edit 5s ease infinite;
-        animation: edit 5s ease infinite;
-      }
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
 
-    .faa-edit.animated,
-    .faa-edit.animated-hover:hover,
-    .faa-parent.animated-hover:hover > .faa-edit {
-      -webkit-animation: edit 5s ease infinite;
-      animation: edit 5s ease infinite;
-    }
-    
-    .faa-github.animated,
-    .faa-github.animated-hover:hover,
-    .faa-parent.animated-hover:hover > .faa-github {
-      -webkit-animation: edit 5s ease infinite;
-      animation: edit 5s ease infinite;
-    }
-    
-    .faa-book.animated,
-    .faa-book.animated-hover:hover,
-    .faa-parent.animated-hover:hover > .faa-book {
-      -webkit-animation: edit 5s ease infinite;
-      animation: edit 5s ease infinite;
-    }
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
 
-    #loader {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      z-index: 1;
-      width: 120px;
-      height: 120px;
-    }
-    
-    #one {
-      position: absolute;
-      border-radius: 50%;
-      background: #FFFFFF;
-      opacity: .0;
-      animation: loading 1.4s .65s infinite;
-      height: 20px;
-      width: 20px;
-    }
-    
+  }
+
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
     #two {
       position: absolute;
       border-radius: 50%;
